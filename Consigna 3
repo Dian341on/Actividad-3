@@ -1,0 +1,15 @@
+#Escribe un programa que pida al usuario que ingrese números enteros positivos
+#y luego calcule la suma de todos los números ingresados
+#hasta que el usuario ingrese un número negativo.
+
+suma = 0
+
+numero = int(input("ingrese un numero positivo:"))
+
+while numero >= 0:
+    suma = suma + numero
+    numero = int(input("ingrese el otro numero para sumar: "))
+
+print("la suma total es: ", suma)
+
+    
