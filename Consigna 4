@@ -21,12 +21,12 @@ while corredor1 < distancia_meta and corredor2 < distancia_meta:
     corredor2 = corredor2 + avance2
 
     print("Segundo", segundos)
-    print("Corredor 1 avanzó", avance1, "→ total:", corredor1)
-    print("Corredor 2 avanzó", avance2, "→ total:", corredor2)
+    print("Corredor 1 avanzo", avance1, " total:", corredor1)
+    print("Corredor 2 avanzo", avance2, " total:", corredor2)
 
 if corredor1 >= distancia_meta and corredor2 >= distancia_meta:
-    print("¡Empate!")
+    print("Empate")
 elif corredor1 >= distancia_meta:
-    print("Ganó el Corredor 1 en", segundos, "segundos ")
+    print("Gano el Corredor 1 en", segundos, "segundos ")
 else:
-    print("Ganó el Corredor 2 en", segundos, "segundos ")
+    print("Gano el Corredor 2 en", segundos, "segundos ")
