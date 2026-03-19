@@ -1,0 +1,32 @@
+#Escribe un programa que simule una carrera entre dos corredores.
+#Cada corredor avanza un número de metros generado aleatoriamente en cada iteración del ciclo.
+#El programa debe mostrar quién ganó la carrera y en cuántos segundos.
+
+import random
+
+distancia_meta = 100
+
+corredor1 = 0
+corredor2 = 0
+
+segundos = 0
+
+while corredor1 < distancia_meta and corredor2 < distancia_meta:
+    segundos = segundos + 1
+
+    avance1 = random.randint(1, 10)
+    avance2 = random.randint(1, 10)
+
+    corredor1 = corredor2 + avance1
+    corredor2 = corredor2 + avance2
+
+    print("Segundo", segundos)
+    print("Corredor 1 avanzó", avance1, "→ total:", corredor1)
+    print("Corredor 2 avanzó", avance2, "→ total:", corredor2)
+
+if corredor1 >= distancia_meta and corredor2 >= distancia_meta:
+    print("¡Empate!")
+elif corredor1 >= distancia_meta:
+    print("Ganó el Corredor 1 en", segundos, "segundos ")
+else:
+    print("Ganó el Corredor 2 en", segundos, "segundos ")
