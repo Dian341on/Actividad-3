@@ -1,0 +1,16 @@
+#Escribe un programa que pida al usuario que ingrese números enteros positivos
+#y luego calcule el producto de todos los números ingresados
+#hasta que el usuario ingrese un número negativo.
+
+
+producto = 0
+
+numero = int(input("ingrese un numero positivo:"))
+
+while numero >= 0:
+    producto = producto + numero
+    numero = int(input("ingrese el otro numero: "))
+
+print("El producto total es: ", producto)
+
+    
